@@ -11,6 +11,7 @@
 // globalThis.console.log(module)
 
 
+
 const math=require("./math")
 
 //common js
