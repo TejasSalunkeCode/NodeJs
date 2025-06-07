@@ -19,3 +19,4 @@ console.log(math.add(5,10));
 console.log(math.sub(10,5));
 console.log(math.mul(5,10));
 console.log(math.div(10,5));
+
