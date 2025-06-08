@@ -2,7 +2,7 @@ const http=require("http");
 
 const server=http.createServer((req,res)=>{
     if(req.url==="/"){
-        res.write("I am Vindo Bahadur Thapa aka Thapa Technical")
+        res.write("I am Vindo Bahadur Thapa aka Thapa Technical %")
         res.end();
     }
 
@@ -13,7 +13,7 @@ const server=http.createServer((req,res)=>{
     }
 
     if(req.url==="/about"){
-        res.write("I am a Full Stack developer")
+        res.write("I am a Full Stack developer from pune")
         res.end();
     }
 
