@@ -1,5 +1,5 @@
 import express from "express";
-
+import {PORT} from "./env.js"
 const app = express();
 
 app.get("/about", (req, res) => {
@@ -32,7 +32,7 @@ app.get("/contact", (req, res) => {
 })
 
 
-    const PORT = process.env.PORT || 3000;
+    // const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => {
         console.log(`Server is running at PORT : ${PORT}`);
         console.log();
