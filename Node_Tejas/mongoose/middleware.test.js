@@ -12,17 +12,19 @@ const userSchema=mongoose.Schema({
     name:{type:String,required:true},
     email:{type:String,required:true,unique:true},
     age:{type:Number,required:true,min:5},
-    createdAt:{type:Date,default:Date.now()},
-    updatedAt:{type:Date,default:Date.now()},
-})
+    // createdAt:{type:Date,default:Date.now()},
+    // updatedAt:{type:Date,default:Date.now()},
+},{
+   timestamps:true, 
+});
 
 //we will use middleware
-userSchema.pre(["updateOne","updateMany","findOneUpdate"],
-    function(next){
-    this.set({updatedAt:Date.now()});
-    // this.updateOne({},{$set:{updateOne}});
-    next();
-});
+// userSchema.pre(["updateOne","updateMany","findOneUpdate"],
+//     function(next){
+//     this.set({updatedAt:Date.now()});
+//     // this.updateOne({},{$set:{updateOne}});
+//     next();
+// });
 
 //step 2 : creating a model
 const Users=mongoose.model("user",userSchema);
@@ -30,7 +32,7 @@ const Users=mongoose.model("user",userSchema);
 
 
 //step 3: to insert the data
-await Users.updateOne({email:"tejas@gmail.com"},{$set:{age:101}});
+await Users.updateOne({email:"tejas@gmail.com"},{$set:{age:31}});
 
 await mongoose.connection.close();
 
