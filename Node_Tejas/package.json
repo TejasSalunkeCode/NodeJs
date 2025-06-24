@@ -1,17 +1,26 @@
 {
-  "name": "node_tejas",
-  "version": "1.0.0",
-  "description": "Node Js Tutorial",
-  "license": "ISC",
-  "type": "module",
-  "author": "Tejas Salunke",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
   },
-  "dependencies": {
-    "chalk": "^5.4.1",
-    "eslint": "^9.28.0",
-    "express": "^5.1.0"
-  }
+  "connections": [
+    {
+      "id": "f9a99147-0095-496a-9dbb-59cb15b6d2a7",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1750777587205"
+        }
+      },
+      "favorite": {
+        "name": "tejas",
+        "color": "color3"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb://localhost:27017/",
+        "oidc": {}
+      },
+      "connectionSecrets": "AAGcltK0Gv6tQjPgxzu9x2y2IqxCR+cd/g4o1LDvi9m1jGJtbij2LLvnZ49IXFJ1uTinokzz0vmkNg/0R7s9E7/GsWmkNtqm4zpBDTJCFpL7IH3zeQYLg8YwVeMViQZhm0rc2NkxJO+nNEIjR9ZMJ/apgOICNegivmCaamQH3NBOw40uNEjLOQFn5+o="
+    }
+  ]
 }

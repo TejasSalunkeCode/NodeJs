@@ -1,13 +1,22 @@
 import express from "express";
 import {PORT} from "./env.js"
+import path from "path";
 const app = express();
+
+app.use(express.static("public"));
 
 app.get("/about", (req, res) => {
     res.send("Now You are in about Page")
 })
 
 app.get("/", (req, res) => {
-    res.send("Hello World..!")
+    const homePagePath=path.join(import.meta.dirname,"public","index.html")
+    res.sendFile(homePagePath)
+
+    // console.log(import.meta.url);
+    // const __filename=new URL(import.meta.url).pathname;
+    // console.log(__filename);
+    
 })
 
 app.get("/contact", (req, res) => {
@@ -39,3 +48,6 @@ app.get("/contact", (req, res) => {
 
 
     })
+
+      const __filename=new URL(import.meta.url).pathname;
+      console.log(__filename);
