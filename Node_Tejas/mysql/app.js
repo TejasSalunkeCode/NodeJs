@@ -25,6 +25,7 @@ console.log("MYSQL connected Sucesfully");
 //     `)
 
 
+
 //!4 : is to perform CRUD operation
 //?DO NOT USE
 // await db.execute(`
