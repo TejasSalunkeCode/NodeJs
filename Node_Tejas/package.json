@@ -22,5 +22,8 @@
       },
       "connectionSecrets": "AAGcltK0Gv6tQjPgxzu9x2y2IqxCR+cd/g4o1LDvi9m1jGJtbij2LLvnZ49IXFJ1uTinokzz0vmkNg/0R7s9E7/GsWmkNtqm4zpBDTJCFpL7IH3zeQYLg8YwVeMViQZhm0rc2NkxJO+nNEIjR9ZMJ/apgOICNegivmCaamQH3NBOw40uNEjLOQFn5+o="
     }
-  ]
+  ],
+  "dependencies": {
+    "cookie-parser": "^1.4.7"
+  }
 }
