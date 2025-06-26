@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1750928828532,
+      "tag": "0000_majestic_colonel_america",
+      "breakpoints": true
+    }
+  ]
+}

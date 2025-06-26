@@ -55,7 +55,7 @@ const main = async () => {
     const deleteuser=await prisma.user.delete({
         where:{id:3},
     });
-    console.log(deleteuser);
+     console.log(deleteuser);
     
 
 
